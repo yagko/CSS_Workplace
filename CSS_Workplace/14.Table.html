@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table, th,td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin: 50px auto;
+
+        }
+        table{
+            padding: 10px 50%;
+            
+        }
+        thead th:nth-child(n+2){
+            background-color: rgb(57, 87, 28);
+            font-style: italic;
+            color: rgb(255, 255, 255);
+        }
+        thead th:nth-child(1):hover{
+            height: 50px;
+            background-image: url(CSS/sports.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        thead th:nth-child(1):active{
+            height: 101px;
+            background-image: url(CSS/ben.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        th, td{
+            padding: 5px 5px;
+        }
+        tbody{
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            color: rgb(57, 87, 28);
+        }
+        .empty{
+            font-weight: bold;
+            text-align: left;
+            background-color: rgb(57, 87, 28);
+            color: rgb(255, 255, 255);
+        }
+        tbody tr:last-child td:nth-child(2):hover {
+            background-color: black;
+            font-size: 3em;
+            color: rgb(167, 4, 139);
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Supervisor-so</th>
+                <th>Ödül</th>
+                <th>Taso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="empty">Ne kadar istiyosun?</td>
+                <td>Çok istiyorum</td>
+                <td>Biraz istiyorum</td>
+                <td>Hiç istemiyorum.</td>
+            </tr>
+            <tr>
+                <td class="empty">Neden?</td>
+                <td>İşkolik olduğum için</td>
+                <td>Çok iyi biliyorum</td>
+                <td>Nefret ettim artık</td>
+            </tr>
+            <tr>
+                <td class="empty">Ne kadar iyisin?</td>
+                <td>7/10</td>
+                <td>8/10</td>
+                <td>8.5/10</td>
+            </tr>
+            <tr>
+                <td class="empty">Kimle yapmak isterdin?</td>
+                <td>Yağız</td>
+                <td>Furkan</td>
+                <td>Zeynep</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

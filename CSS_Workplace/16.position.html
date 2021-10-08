@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            position: relative;
+            top: 50px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(116, 237, 100);
+            position: relative;
+            top: 60px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(237, 100, 207);
+            position: relative;
+            top: 70px;
+        }
+        .innerbox{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(237, 235, 100);
+            position: absolute;
+            top: 25%;
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">
+        <div class="innerbox"></div>
+    </div>
+    <br><br>
+</body>
+</html>

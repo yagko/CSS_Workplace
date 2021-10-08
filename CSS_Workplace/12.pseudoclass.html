@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        a{
+            font-size: 1.5em;
+            display: inline-block;
+            color: black;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 10px;
+            text-decoration: none;
+            
+        }
+        a:hover{
+            color: red;
+            background-color: black;
+            border-color: red;
+        }
+
+        a:visited{
+            color: greenyellow;
+        }
+
+        a:active{
+            font-size: 2em;
+        }
+
+        input:focus {
+            outline: 0;
+            border: 2px solid green;
+        }
+
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.2em;    
+        }
+
+        .para1::first-letter{
+            font-size: 50px;
+        }
+
+        .para1::first-line{
+            color: hotpink;
+        }
+
+        .para1::after{
+            font-weight: bold;
+            color: blue;
+            content: "End of discussion"
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Bu linke tıklama!</a>
+    <br><br>
+    <input type="text" placeholder="Name">
+    <br><br>
+    <p class="para1"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic blanditiis voluptate, inventore maxime numquam nulla aut laboriosam eos pariatur reprehenderit voluptatum nobis quod dolore quam omnis, dicta officiis laborum delectus minima, iure tempora id harum consequatur. Impedit molestias ab natus iste culpa dicta ut, placeat dolorum quaerat non qui at blanditiis est officia tempora reiciendis fugit sunt, corrupti perferendis nemo mollitia quas sequi. Dolorum quos possimus fugiat facere, quia vitae commodi unde dolore voluptatibus non! Culpa iusto, voluptatem hic nobis fugiat, magnam doloribus vitae sed nam tempore pariatur libero illum. At ratione unde maxime obcaecati esse nostrum perferendis consectetur debitis?
+    </p>
+</body>
+</html>
